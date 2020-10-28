@@ -14,11 +14,13 @@ Here we are creating an app (using Kotlin) that calculates tip based on how good
 ### Let's start by enabling view binding
 
 <br>
-In build.gradle(:app)
+In build.gradle(:app) add the code in -> android { ... }
 
 ```bash
-buildFeatures {
-    viewBinding = true
+android {
+    buildFeatures {
+        viewBinding = true
+    }
 }
 ```
 
@@ -57,6 +59,5 @@ val cost: String = binding.editTextCost.text.toString()
 <br>
 
 ## Documentation
-<br>
 
 [**Link**](https://developer.android.com/topic/libraries/view-binding)
